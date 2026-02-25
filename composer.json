@@ -1,0 +1,47 @@
+{
+    "name": "MechanicPro/crypto-wallet-ledger",
+    "description": "A robust, enterprise-grade cryptocurrency wallet and ledger module for Laravel 12.",
+    "type": "library",
+    "keywords": [
+        "laravel",
+        "crypto",
+        "wallet",
+        "ledger",
+        "blockchain",
+        "highload",
+        "concurrency"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Denis Yegorov",
+            "email": "student_belgu@mail.ru",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.3.0",
+        "ext-bcmath": "*",
+        "illuminate/support": "^12.0",
+        "illuminate/database": "^12.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^11.0",
+        "orchestra/testbench": "^10.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "Database\\Migrations\\": "database/migrations/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "App\\Providers\\WalletServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
